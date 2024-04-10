@@ -1,0 +1,329 @@
+* {
+
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.instagram {
+    display: flex;
+   }
+
+.sidebar {
+    /* flex-grow: 1; */
+    width: 200px;
+    height: 100vh; /* Set height to 100% of viewport height */
+    border-right: 0.3px solid rgb(84, 82, 82);
+    position: fixed; /* Fixed position */
+    overflow-y: hidden; /* Add scrollbar when content exceeds height */
+    top: 0;
+    left: 0;
+
+}
+
+.instagramtextlogo {
+    padding: 25px 12px 20px 25px; /* Updated padding shorthand */
+}
+
+.instagramtextlogo img {
+    height: 50px;
+    width: 100px;
+}
+
+.mainsection {
+    margin-left: 200px; /* Adjust to accommodate the sidebar */
+    padding: 20px; /* Add padding as needed */
+    overflow: auto;
+}
+
+.icon_bar {
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.icon_bar div {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.material-symbols-outlined {
+    font-weight: 300;
+    font-size: 30px;
+    padding-right: 12px !important;
+}
+
+.icon_bar_icon img{
+    padding-right: 12px;
+    width: 30px;
+    height: 30px;
+}
+.icon_bar_icon img+p{
+    font-weight: 600;
+}
+
+.footer{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+}
+.thread img{
+    height: 30px;
+    width: 30px;
+    padding-right: 12px;
+}
+/* BIO OF INSTAGRAM */
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.first_section{
+    display: flex;
+    flex-direction: row;
+}
+.profilephoto{
+    padding-right: 100px;
+}
+.profilephoto img{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+.text_bio{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start horizontally */
+    margin-top: 0px; /* Adjust margin to bring the div closer to the top */
+}
+.username_button {
+    display: flex;
+    flex-direction: row; /*keep the buttons in row*/
+    justify-content: flex-start; /* Adjusted */
+    align-items: center; /* Align items vertically */
+}
+.username_button p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 20px;
+    margin-right: 15px; /* Added margin to separate username from buttons */
+}
+.username_button button {
+    border: none;
+    border-radius: 5px;
+    height:34px;
+    width: 99px;
+    padding: 5px;
+    font-weight: 500;
+    background-color: #363636;
+    margin-right: 5px;
+    font-size: 15px;
+}
+.followers{
+    margin-top: 20px;
+   
+}
+.followers span{
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    /* padding-top: 3px; */
+}
+.about_me {
+    margin-top: 15px;
+    
+}
+.about_me span,p{
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 50;
+
+}
+.about_me p a{
+    text-decoration: none;
+    color: #E0F1FF;
+}
+
+.about_me p a:hover{
+    text-decoration: underline;
+}
+
+#engagement{
+    margin-top: 10px;
+}
+#engagement span{
+    font-weight: 580;
+}
+.highlights{
+    display: flex;
+    flex-direction: row;
+
+}
+/* this will give div inside highlight a different flex direction */
+.highlights > div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    height: 200px;
+    width: 200px;
+}
+
+
+.highlights img{
+    height: 100px;
+    width: 100px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.heighlights p{
+    text-align: center;
+}
+
+
+hr{
+    width: 900px;
+    border: none; /* Remove the border */
+    border-top: 0.3px solid grey; /* Add top border instead */
+    margin: 50px auto; /* Center the <hr> horizontally */
+
+}
+
+.reel_grid_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.reel_grid_icons > div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+.reel_grid_icons p{
+    font-size: 15px;
+}
+#new_icons{
+    font-size: 20px;
+}
+
+/* Define styles for the container */
+.posts {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+.two{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(1.jpeg);
+    background-size: cover;
+
+}
+.one{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(2.jpeg);
+    background-size: cover;
+
+}
+.three{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(3.jpeg);
+    background-size: cover;
+
+}
+.four{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(4.jpeg);
+    background-size: cover;
+
+}
+.five{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(5.jpeg);
+    background-size: cover;
+
+}
+.six{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(7.jpeg);
+    background-size: cover;
+
+}
+.seven{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(8.jpeg);
+    background-size: cover;
+
+}
+.eight{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(9.jpeg);
+    background-size: cover;
+
+}
+.nine{
+    height: 25rem;
+    width: 25rem;
+    background-image: url(6.jpeg);
+    background-size: cover;
+
+}
+
+.postimage {
+    position: relative; /* Added */
+    z-index: 0;
+}
+
+.postimage:hover {
+    background-color: black;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the heart */
+    background-color: transparent;
+    opacity: 0;
+    z-index: 1000;
+    color: #fff;
+    
+}
+
+.postimage:hover .heart { 
+    opacity: 1;
+    z-index: 1000;
+}
+
